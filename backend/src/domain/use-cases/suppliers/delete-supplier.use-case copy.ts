@@ -6,7 +6,7 @@ interface DeleteSupplierUseCase {
   execute(deleteSupplierDto: DeleteSupplierDto): Promise<SupplierEntity>;
 }
 
-export class CreateSupplier implements DeleteSupplierUseCase {
+export class DeleteSupplier implements DeleteSupplierUseCase {
   constructor(private supplierRepository: SupplierRepository) {}
 
   execute(deleteSupplierDto: DeleteSupplierDto): Promise<SupplierEntity> {
