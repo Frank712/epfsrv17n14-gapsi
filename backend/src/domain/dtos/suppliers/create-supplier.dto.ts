@@ -9,6 +9,7 @@ export class CreateSupplierDto {
     const { nombre, razonSocial, direccion } = object;
     if (!nombre) return ["El nombre es requerido"];
     if (!razonSocial) return ["La razon social es requerida"];
+    if (!direccion) return ["La dirección es requerida"];
     return [, new CreateSupplierDto(nombre, razonSocial, direccion)];
   }
 }

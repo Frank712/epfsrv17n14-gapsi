@@ -21,7 +21,7 @@ export class SupplierController {
   //:TODO Get list of suppliers
   getSuppliers = (req: Request, res: Response) => {
     const [error, getAllSupplierDto] = GetAllSuppliersDto.create(req.body);
-
+    console.log(error, getAllSupplierDto);
     if (error) {
       res.status(400).json({ error });
     }
@@ -35,9 +35,9 @@ export class SupplierController {
   //:TODO Add a supplier
   createSupplier = (req: Request, res: Response) => {
     const [error, createSupplierDto] = CreateSupplierDto.create(req.body);
-
+    console.log(error, createSupplierDto);
     if (error) {
-      res.status(400).json({ error });
+      return res.status(400).json({ error });
     }
 
     new CreateSupplier(this.supplierRepository)
@@ -48,10 +48,10 @@ export class SupplierController {
 
   //:TODO Delete a supplier
   deleteSupplier = (req: Request, res: Response) => {
-    const [error, deleteSupplierDto] = DeleteSupplierDto.create(req.body);
-
+    const [error, deleteSupplierDto] = DeleteSupplierDto.create(req.query);
+    console.log(error, deleteSupplierDto);
     if (error) {
-      res.status(400).json({ error });
+      return res.status(400).json({ error });
     }
 
     new DeleteSupplier(this.supplierRepository)
