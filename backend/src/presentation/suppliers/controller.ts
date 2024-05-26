@@ -20,7 +20,7 @@ export class SupplierController {
 
   //:TODO Get list of suppliers
   getSuppliers = (req: Request, res: Response) => {
-    const [error, getAllSupplierDto] = GetAllSuppliersDto.create(req.body);
+    const [error, getAllSupplierDto] = GetAllSuppliersDto.create(req.query);
     console.log(error, getAllSupplierDto);
     if (error) {
       res.status(400).json({ error });

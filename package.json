@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "client": "cd.. && npm run dev --prefix ./frontend",
-    "server": "cd.. && npm run dev --prefix ./backend ",
+    "client": "cd.. && npm run dev --prefix ./examen-practico/frontend",
+    "server": "cd.. && npm run dev --prefix ./examen-practico/backend",
     "start": "concurrently --kill-others-on-fail \"npm run server \" \"npm run client \" "
   },
   "author": "",

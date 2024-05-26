@@ -7,7 +7,7 @@ import { Server } from "./presentation/server";
 
 async function main() {
   new Server({
-    port: 3001,
+    port: 3333,
     routes: AppRoutes.routes,
   }).start();
 }

@@ -2,5 +2,6 @@
 
 ## Dev
 
-run `npm install`
+run `npm install -g pnpm`
+run `pnpm recursive install`
 run `npm start`
