@@ -1,91 +1,76 @@
 {
-	"info": {
-		"_postman_id": "b84946be-e4c2-45ba-8925-f01d021016a4",
-		"name": "API E-commerce Gapsi",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "6192337"
-	},
-	"item": [
-		{
-			"name": "Suppliers: GET all supliers",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"page\": \"1\",\r\n    \"limit\": \"10\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3001/api/suppliers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3001",
-					"path": [
-						"api",
-						"suppliers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Supplier: CREATE a supplier",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Francisco Lino\",\r\n    \"razonSocial\": \"Frank y Asociados\",\r\n    \"direccion\": \"Calle Sur No 22 Washington\"\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3001/api/suppliers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3001",
-					"path": [
-						"api",
-						"suppliers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Supplier: DELETE supplier",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3001/api/suppliers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3001",
-					"path": [
-						"api",
-						"suppliers"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "b84946be-e4c2-45ba-8925-f01d021016a4",
+    "name": "API E-commerce Gapsi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6192337"
+  },
+  "item": [
+    {
+      "name": "Suppliers: GET all supliers",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"page\": \"1\",\r\n    \"limit\": \"10\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3333/api/suppliers",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "suppliers"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Supplier: CREATE a supplier",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Francisco Lino\",\r\n    \"razonSocial\": \"Frank y Asociados\",\r\n    \"direccion\": \"Calle Sur No 22 Washington\"\r\n\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3333/api/suppliers",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "suppliers"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Supplier: DELETE supplier",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3333/api/suppliers",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "suppliers"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
